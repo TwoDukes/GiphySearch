@@ -23,6 +23,7 @@ function searchGiphy(queryTerm){
   cleanChildren(gifStream); //cleans out current gifStream
   
   inputField.value = "";
+  inputField.placeholder = "";
 
   var term = encodeURIComponent(queryTerm);
   //address of makeSchool Giphy API

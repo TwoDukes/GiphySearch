@@ -33,19 +33,29 @@
    border-radius: 20px;
 }
 
-
-
 body{
   background-color: #4c384a;
 
 }
-
 
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: darkgray;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: darkgray;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: darkgray;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: darkgray;
 }
 
 
