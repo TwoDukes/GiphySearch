@@ -45,6 +45,7 @@ function searchGiphy(queryTerm){
         let gifSRC = parsed.data[i].images.fixed_height.url;
         let currentGif = document.createElement('img');
         currentGif.setAttribute('src', gifSRC);
+        currentGif.setAttribute('class', "gif");
         gifStream.appendChild(currentGif)
       }
     })
@@ -57,3 +58,6 @@ function cleanChildren(obj){
     obj.removeChild(obj.lastChild);
   }
 }
+
+
+

@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
      <link rel="stylesheet" type="text/css" href="theme.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
     <title>GIFFY STUFF</title>
   </head>
   <body>
 
     <center><button id="searchButton" class="button">Search Gifs</button><center>
-    <input type="text" id='queryField'  placeholder="Type here.."></input>
+    <input type="text" id='queryField'  placeholder="Type here.."></input>  
 
     <div id='gifStream'></div>
 

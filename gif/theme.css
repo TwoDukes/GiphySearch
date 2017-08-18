@@ -38,6 +38,14 @@ body{
 
 }
 
+.gif:active{
+  height: 500px;
+  position: absolute;
+  top: 25%;
+  right: 25%;
+}
+
+
 input:focus,
 select:focus,
 textarea:focus,
