@@ -1,25 +1,52 @@
+ 
 #searchButton {
-  margin-top: 20px;
-  font-size: 200%;
+    width: 180px;
+    height: 50px;
+    background: #866768;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px #2c2130;
+    margin-top: 20px;
+    font-size: 120%;
 }
+
+#searchButton:active{
+  box-shadow: none;
+}
+
+
+
 #queryField{
   margin-top: 40px;
   font-size: 200%;
-  color: #adadad;
-  background-color: #232d22;
+  color: #000000;
+  background-color: #866768;
+  box-shadow: 5px 5px 10px #2c2130;
   text-align: center;
-  border-color:  #3e513b;
+  border-radius: 20px;
+  border: none;
 }
 #gifStream {
   margin-top: 30px;
    width: 90%;
-   background-color: #232d22;
-   border-radius: 2%
+   background-color: #866768;
+   border-radius: 20px;
 }
 
 
 
 body{
-  background-color: #3e513b;
+  background-color: #4c384a;
 
 }
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+

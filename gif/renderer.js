@@ -4,14 +4,25 @@ const inputField = document.getElementById('queryField');
 const gifStream = document.getElementById('gifStream');
 
 
+inputField.focus();
+
 searchButton.addEventListener("click", () => {
   //searchs giphy with curren search value
   searchGiphy(inputField.value);
 });
 
+inputField.addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) { // 13 is enter
+      searchGiphy(inputField.value);  
+    }
+});
+
 function searchGiphy(queryTerm){
 
   cleanChildren(gifStream); //cleans out current gifStream
+  
+  inputField.value = "";
 
   var term = encodeURIComponent(queryTerm);
   //address of makeSchool Giphy API
