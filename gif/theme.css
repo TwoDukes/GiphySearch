@@ -39,7 +39,8 @@ body{
 }
 
 .gif:active{
-  height: 500px;
+  height: 50%;
+  width: auto;
   position: absolute;
   top: 25%;
   right: 25%;
